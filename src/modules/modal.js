@@ -10,7 +10,8 @@ const modal =()=>{
 	overlay.forEach((item)=>{
 		header.addEventListener('click', (e)=>{
 			
-			if(e.target.classList.contains('callback-btn')){	
+			if(e.target.classList.contains('callback-btn')){
+				e.preventDefault();	
 				item.style.display = 'block';
 				modalCallback.style.display = 'block';			
 			}

@@ -8,6 +8,7 @@ const uslugi =()=>{
 	
 	elements.forEach((item)=>{
 		item.addEventListener('click', ()=>{
+			e.preventDefault();
 			overlay.forEach((item)=>{
 				item.style.display = 'block';
 			})			
@@ -17,6 +18,7 @@ const uslugi =()=>{
 	})	
 
 	buttonService.addEventListener('click', ()=>{
+		e.preventDefault();
 		overlay.forEach((item)=>{
 				item.style.display = 'block';
 			})			
