@@ -1,7 +1,7 @@
 
 const modal =()=>{
 
-    const modalCallback = document.querySelector('.modal-callback');
+	const modalCallback = document.querySelector('.modal-callback');
 	const modalClose = modalCallback.querySelector('.modal-close');
 	const overlay = document.querySelectorAll('.modal-overlay');
 	const header = document.querySelector('.header');
@@ -11,7 +11,7 @@ const modal =()=>{
 		header.addEventListener('click', (e)=>{
 			
 			if(e.target.classList.contains('callback-btn')){
-				e.preventDefault();	
+				e.preventDefault();
 				item.style.display = 'block';
 				modalCallback.style.display = 'block';			
 			}
@@ -20,7 +20,8 @@ const modal =()=>{
 	})
 	
 	
-	body.addEventListener('click', (e)=>{		
+	body.addEventListener('click', (e)=>{
+		
 		if(e.target.closest('.modal-overlay')){			
 			e.target.style.display = 'none';
 			modalCallback.style.display = 'none';			
@@ -29,12 +30,13 @@ const modal =()=>{
 	
 	
 	 modalClose.addEventListener('click', ()=>{
+		
 		modalCallback.style.display = 'none';
 		overlay.forEach((item)=>{
 			item.style.display = 'none';
 		})
 		
-	})  
+	})   
     
 }
 
