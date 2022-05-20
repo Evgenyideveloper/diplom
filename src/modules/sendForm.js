@@ -33,7 +33,7 @@ const sendForm = () =>{
 				formBody[key] = val;
 			});			
 		
-		console.log('submit');		
+		//console.log('submit');		
 		
 		
 		sendData(formBody)
