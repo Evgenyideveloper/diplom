@@ -40,6 +40,9 @@ const sendForm = () =>{
                 .then(data =>{               
                 console.log(data);
 				statusBlock.textContent = successText;
+                setTimeout(()=>{
+					statusBlock.textContent = '';
+				},5000);
             })
 			.catch(error =>{
                 statusBlock.textContent = errorText;
