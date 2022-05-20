@@ -5,6 +5,8 @@
  import accordeon from './modules/accordeon';
  import sendForm from './modules/sendForm';
  import validateForm from './modules/validateForm';
+ import upScroll from './modules/upScroll';
+ import move from './modules/move';
 
  swiper();
  modal();
@@ -13,3 +15,5 @@
  accordeon();
  sendForm();
  validateForm();
+ upScroll();
+ move();
