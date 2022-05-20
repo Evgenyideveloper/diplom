@@ -7,7 +7,7 @@ const uslugi =()=>{
 	const buttonService = document.querySelector('.button-services');
 	
 	elements.forEach((item)=>{
-		item.addEventListener('click', ()=>{
+		item.addEventListener('click', (e)=>{
 			e.preventDefault();
 			overlay.forEach((item)=>{
 				item.style.display = 'block';
@@ -17,7 +17,7 @@ const uslugi =()=>{
 		
 	})	
 
-	buttonService.addEventListener('click', ()=>{
+	buttonService.addEventListener('click', (e)=>{
 		e.preventDefault();
 		overlay.forEach((item)=>{
 				item.style.display = 'block';
